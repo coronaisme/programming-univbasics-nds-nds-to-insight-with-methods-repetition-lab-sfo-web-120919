@@ -29,7 +29,11 @@ def list_of_directors(source)
   director_names = []
   i = 0 
   
-  
+  while i < source.length do
+    director_names << source[i][:names]
+    i ++
+  end
+  director_names
 end
 
 def total_gross(source)
